@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% block title %} Welcome | {% endblock %}
+
+
+{% block content %}
+    <div class = "columns is-multiline mb-5" >
+        <div class = "column is-12 has-text-centered mt-5 mt-5" >
+            <h2 class = "is-size-3"> Newest Product </h2>
+        </div>
+
+        {% for product in newest_products %}
+            {% include 'product/parts/list_item.html' %}
+        {% endfor %}
+    </div>
+{% endblock %}
