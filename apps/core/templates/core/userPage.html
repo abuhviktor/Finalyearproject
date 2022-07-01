@@ -1,0 +1,20 @@
+{% extends 'core/index.html' %}
+
+{% block title %} {{ request.user }} {% endblock %}
+
+{% block content %}
+    <h2> Welcome  </h2>
+    <br>
+    <div class="box">
+        <table>
+            <tr>
+                <td><strong>USERNAME : </strong></td>
+                <td> {{ request.user }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="box">
+        <h2 class="is-size-3 mb-4">My orders</h2>
+    </div>
+{% endblock %}

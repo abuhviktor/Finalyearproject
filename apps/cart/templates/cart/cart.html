@@ -1,4 +1,4 @@
-{% extends 'core/base.html' %}
+{% extends 'core/index.html' %}
 
 {% block title %} Cart |{% endblock %}
 
@@ -54,7 +54,7 @@
 
         <h2 class="subtitle"> Contact Information </h2>
 
-        <form method="post" action=".." id="payment-form">
+        <form method="post" action="." id="payment-form">
             {% csrf_token %}
 
 {#            in case of errors#}
@@ -69,7 +69,7 @@
                     <ul>
                         {% for field in form %}
                             {% for error in fields.errors %}
-                                <li><strong>{{ field.label }}:</strong> {{ error }}</li>
+                                <li ><strong>{{ field.label }}:</strong> {{ error }}</li>
                             {% endfor %}
                         {% endfor %}
                     </ul>
@@ -123,8 +123,9 @@
             <h2 class="subtitle">Payment Information</h2>
 
             <div id="card-element">
-<!--                A Stripe Element Will Be Inserted here-->
+                <!-- A Stripe Element will be inserted here -->
             </div>
+
 
             {% if messages %}
                 {% for message in messages %}
@@ -138,7 +139,6 @@
                 </div>
             </div>
 
-        </form>
     {% else %}
         <p>You dont have any product!</p>
     {% endif %}
