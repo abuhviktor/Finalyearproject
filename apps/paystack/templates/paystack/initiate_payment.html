@@ -1,0 +1,21 @@
+{% extends 'core/index.html' %}
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+
+{% block title %} Payment | {% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        {% comment %} <div class="d-flex row justify-content-center align-items-center py-md-5 py-3" style="min-height: 90vh;"> {% endcomment %}
+            {% comment %} <div class="col-12"> {% endcomment %}
+                <form method="POST" action=".">
+                    <h4> Enter Details</h4>
+                    <hr>
+                    {% csrf_token %}
+                    {{ payment_form.as_p }}
+                    <p><input class='btn btn-primary' type='submit' value='submit'></p>
+                </form>
+            {% comment %} </div> {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+    </div>
+{% endblock %}

@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'apps.canteen',
     'apps.product',
     'apps.cart',
-    'apps.order'
+    'apps.order',
+    'apps.paystack',
 
 
 ]
@@ -153,6 +154,9 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 # EMAIL_USE_TLS = True
 # EMAIL_HOST_USER = 'abuhvaduojo@gmail.com'
 # EMAIL_HOST_PASSWORD = ''
+
+PAYSTACK_SECRET_KEY = 'sk_test_50ccbcdca98b0acee9ddb3e8a674ff6d81cc99c6'
+PAYSTACK_PUBLIC_KEY = 'pk_test_cead3d78a55c364de0c1360deaf3a0f3fdb7481f'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

@@ -93,41 +93,11 @@
                             </form>
                         </div>
                     </div>
-                    <div class="navbar-end">
+                    <div class="navbar-item">
                         <a href="{% url 'logins' %}" class="btn btn-warning">Login</a>
                     </div>
                 </div>
             </nav>
-{#            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">#}
-{#              <div class="container-fluid navbar-brand">#}
-{#                <a class="navbar-brand navbar-item" href="{% url 'frontpage' %}">E-catering</a>#}
-    {#            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
-    {#              <span class="navbar-toggler-icon"></span>#}
-    {#            </button>#}
-{#                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-navbar">#}
-{#                    <span aria-hidden="true"></span>#}
-{#                    <span aria-hidden="true"></span>#}
-{#                    <span aria-hidden="true"></span>#}
-{#                </a>#}
-{#                <div class="collapse navbar-collapse navbar-menu" id="main-navbar navbarSupportedContent">#}
-{#                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">#}
-{#                    <li class="nav-item">#}
-{#                      <a class="nav-link active" aria-current="page" href="#"></a>#}
-{#                    </li>#}
-{#                    <form method="get" action="{% url 'search' %}" class="d-flex"  role="search" >#}
-{#                        <input class="form-control me-2" type="text" placeholder="Search..." name="query">#}
-{#                        <div class="control">#}
-{#                            <button class="btn btn-outline-success" type="submit">Search</button>#}
-{#                        </div>#}
-{#                    </form>#}
-{#                  </ul>#}
-{#                  <div class="form-inline my-2 my-lg-0">#}
-{#                      <a href="{% url 'logins' %}" class="btn btn-warning">Login</a>#}
-{##}
-{#                  </div>#}
-{#                </div>#}
-{#              </div>#}
-{#            </nav>#}
         {% endif %}
 
 
@@ -181,7 +151,6 @@
         </footer>
 
         {% block scripts %}
-
         {% endblock %}
     </body>
 </html>
